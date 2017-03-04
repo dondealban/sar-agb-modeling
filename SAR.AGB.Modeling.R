@@ -5,3 +5,9 @@
 # Script By:      Jose Don T De Alban
 # Date Created:   04 Mar 2017
 # Last Modified:  
+
+
+# SET WORKING DIRECTORY
+setwd("/Users/dondealban/Dropbox/Research/sar-agb-modeling/")
+
+
