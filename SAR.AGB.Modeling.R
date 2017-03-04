@@ -11,3 +11,8 @@
 setwd("/Users/dondealban/Dropbox/Research/sar-agb-modeling/")
 
 
+# LOAD LIBRARIES AND DATA
+
+# Read data, define variables, and store data in variables
+dataVAM <- read.csv(file="/Users/dondealban/Dropbox/Research/sar-agb-modeling/csv/VAM_1ha_ForR.csv", header=TRUE, sep=",")
+
