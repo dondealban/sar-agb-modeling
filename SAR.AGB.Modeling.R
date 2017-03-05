@@ -56,12 +56,12 @@ sink()
 # 2007
 saragb07 <- ggplot(dataVAM, aes(x=T_HA_50x50, y=exp(pred07)))
 saragb07 <- saragb07 + geom_point() + stat_smooth(method="lm", se=TRUE) + theme_bw()
-saragb07 <- saragb07 + labs(title="2007: Field vs Predicted AGB", x="Field AGB(t/ha)", y="Predicted AGB (t/ha)")
+saragb07 <- saragb07 + labs(title="2007: Field vs Predicted AGB", x="Field AGB (t/ha)", y="Predicted AGB (t/ha)")
 
 # All Years
 saragbALL <- ggplot(dataVAM, aes(x=T_HA_50x50, y=exp(predALL)))
 saragbALL <- saragbALL + geom_point() + stat_smooth(method="lm", se=TRUE) + theme_bw()
-saragbALL <- saragbALL + labs(title="All Years: Field vs Predicted AGB", x="Field AGB(t/ha)", y="Predicted AGB (t/ha)")
+saragbALL <- saragbALL + labs(title="All Years: Field vs Predicted AGB", x="Field AGB (t/ha)", y="Predicted AGB (t/ha)")
 
 # Save regression plots
 

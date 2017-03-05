@@ -1,0 +1,30 @@
+[1] "Logarithmic Regression: All Years SAR Gamma0 Backscatter vs Aboveground Biomass"
+
+Call:
+lm(formula = log(T_HA_50x50) ~ HH07 + HV07 + HH08 + HV08 + HH09 + 
+    HV09 + HH10 + HV10 + HH15 + HV15, data = dataVAM)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.83843 -0.25210  0.03331  0.21468  0.87308 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  6.398727   1.154311   5.543 8.69e-07 ***
+HH07        -0.002499   0.059112  -0.042  0.96643    
+HV07         0.134427   0.083876   1.603  0.11473    
+HH08         0.097125   0.071671   1.355  0.18091    
+HV08        -0.129344   0.098063  -1.319  0.19264    
+HH09         0.035992   0.063197   0.570  0.57133    
+HV09        -0.132229   0.077628  -1.703  0.09415 .  
+HH10         0.195071   0.067831   2.876  0.00572 ** 
+HV10        -0.040760   0.086611  -0.471  0.63978    
+HH15         0.019048   0.053427   0.357  0.72281    
+HV15         0.036467   0.057870   0.630  0.53120    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.3759 on 55 degrees of freedom
+Multiple R-squared:  0.3662,	Adjusted R-squared:  0.251 
+F-statistic: 3.178 on 10 and 55 DF,  p-value: 0.002794
+

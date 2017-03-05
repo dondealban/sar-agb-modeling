@@ -1,0 +1,59 @@
+[1] "Logarithmic Regression: 2007 SAR Gamma0 Backscatter vs Aboveground Biomass"
+
+Call:
+lm(formula = log(T_HA_50x50) ~ HH07, data = dataVAM)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.92427 -0.28865 -0.08638  0.34067  0.95766 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  5.69571    0.37427  15.218   <2e-16 ***
+HH07         0.04087    0.05228   0.782    0.437    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4357 on 64 degrees of freedom
+Multiple R-squared:  0.009456,	Adjusted R-squared:  -0.006021 
+F-statistic: 0.611 on 1 and 64 DF,  p-value: 0.4373
+
+
+Call:
+lm(formula = log(T_HA_50x50) ~ HV07, data = dataVAM)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.06939 -0.27711 -0.01351  0.24909  0.95415 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   7.9763     0.8383   9.515  7.2e-14 ***
+HV07          0.2159     0.0703   3.072  0.00313 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4086 on 64 degrees of freedom
+Multiple R-squared:  0.1285,	Adjusted R-squared:  0.1149 
+F-statistic: 9.434 on 1 and 64 DF,  p-value: 0.003125
+
+
+Call:
+lm(formula = log(T_HA_50x50) ~ HH07 + HV07, data = dataVAM)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.06799 -0.25945 -0.02807  0.23200  0.96777 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  7.96479    0.84463   9.430 1.18e-13 ***
+HH07        -0.01915    0.05338  -0.359  0.72101    
+HV07         0.22637    0.07653   2.958  0.00436 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4115 on 63 degrees of freedom
+Multiple R-squared:  0.1302,	Adjusted R-squared:  0.1026 
+F-statistic: 4.717 on 2 and 63 DF,  p-value: 0.01233
+
